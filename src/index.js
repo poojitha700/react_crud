@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap";
+import "jquery/dist/jquery";
+import "popper.js/dist/popper";
+import "./style.css";
+ReactDOM.render(<App />, document.getElementById("root"));
+// json-server --watch db.json --port 5000
+//go to google and type localhost:5000/posts
+// u will see json data there
+//then again open react app using yarn start
